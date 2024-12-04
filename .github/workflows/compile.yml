@@ -63,7 +63,6 @@ jobs:
       - name: Uploading binaries to GitHub Releases
         working-directory: ./binaries
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
             AdGuardHome-amd64-linux
