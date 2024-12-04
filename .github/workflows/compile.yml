@@ -60,7 +60,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Uploading binaries to GitHub Releases
-        uses: softprops/action-gh-release@v2s
+        uses: softprops/action-gh-release@v2
         with:
           make_latest: true
           files: |
