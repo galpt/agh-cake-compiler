@@ -60,9 +60,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Uploading binaries to GitHub Releases
-        uses: softprops/action-gh-release@v2
-        make_latest: "true"
+        uses: softprops/action-gh-release@v2s
         with:
+          make_latest: true
           files: |
             AdGuardHome-amd64-linux
             AdGuardHome-arm64-linux
