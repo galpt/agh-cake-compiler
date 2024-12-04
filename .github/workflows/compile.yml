@@ -55,7 +55,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          make_latest: true
           files: |
             ./AdGuardHome/AdGuardHome-amd64-linux
             ./AdGuardHome/AdGuardHome-arm64-linux
